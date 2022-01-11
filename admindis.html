@@ -43,6 +43,11 @@
         </div>
       </nav>
 
+      <div id="empty-div">
+
+
+      </div>
+
 
 
       
@@ -50,4 +55,34 @@
       
 
   </body>
+  <!-- <script>
+    var empdiv=document.getElementById("empty-div")
+
+
+    var ourreq=new XMLHttpRequest()
+    ourreq.open("GET","/admininfo.html")
+
+    ourreq.onload=function(){
+
+      var ourdata=JSON.parse(ourrequest.responseText)
+    
+        renderHTML(ourdata)
+
+    }
+
+    urrequest.send()
+        function renderHTML(data){
+        var ourtext=""
+
+        for(var i=0;i<data.length;i++){
+        ourtext +="<p>"+"My name is "+data[i].Name+" My Email is "+data[i].Email+" My PassWord is is "+data[i].Password+"</p>"
+    }
+    empdiv.insertAdjacentHTML('beforeend',ourtext)
+
+}
+
+
+  </script> -->
+
+
 </html>
